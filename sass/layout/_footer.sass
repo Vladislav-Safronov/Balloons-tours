@@ -1,0 +1,26 @@
+.footer
+    background-color: #333333
+    padding: 8rem 0
+    &__logo
+        display: block
+        margin: 0 auto
+        margin-bottom: 5rem
+    &__list
+        display: flex
+        justify-content: center
+        & li 
+            transition: all .4s
+            & a
+                font-weight: 300
+                line-height: 1.9rem
+                letter-spacing: 0.2rem
+                color: white
+                padding: 1rem 0
+                text-decoration: none
+                text-transform: uppercase
+            &:hover 
+                transform: rotate(10deg)
+                & a
+                    color: $color-light-brown
+            &:not(:last-child)
+                margin-right: 5rem

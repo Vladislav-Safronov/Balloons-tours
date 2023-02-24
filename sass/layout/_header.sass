@@ -1,0 +1,40 @@
+.header
+    position: relative
+    height: 95vh
+    background: linear-gradient(90deg, rgba($color-light-brown, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%), url(../img/header/main-cover.jpg) center / cover no-repeat
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
+    &__logo
+        position: absolute
+        top: 5rem
+        left: 5rem
+    &__content-box
+        position: absolute
+        top: 32%
+        left: 50%
+        transform: translatex(-50%)
+        text-align: center
+
+.main-title
+    color: $color-white
+    text-align: center
+    margin-bottom: 5rem
+    &__title
+        display: block
+        font-weight: 800
+        font-size: 5rem
+        line-height: 6rem
+        letter-spacing: 1rem
+        text-transform: uppercase
+        margin-bottom: 1rem
+        animation: titleMove 3s ease-in-out 1s
+        backface-visibility: hidden
+        animation-fill-mode: backwards
+    &__subtitle
+        display: block
+        font-weight: 300
+        font-size: 4rem
+        line-height: 4.8rem
+        letter-spacing: .5rem
+        animation: subtitleMove 3s ease-in-out 1s
+        backface-visibility: hidden
+        animation-fill-mode: backwards

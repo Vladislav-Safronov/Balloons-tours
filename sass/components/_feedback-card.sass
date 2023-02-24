@@ -1,0 +1,43 @@
+.feedback-card
+    max-width: 105.7rem
+    background: rgba(255, 255, 255, 0.8)
+    box-shadow: (0 .4rem .4rem rgba(0, 0, 0, 0.1))
+    padding: 5rem 20rem 5rem 17rem
+    clip-path: polygon(11% 0, 100% 0%, 89% 100%, 0% 100%)
+    @include clearfix()
+    &__img
+        position: relative
+        width: 16.7rem
+        height: 16.7rem
+        border-radius: 10rem
+        background: #000
+        shape-outside: circle(50% at 50% 50%)
+        float: left
+        margin-right: 4rem
+        overflow: hidden
+        & img
+            transform: scale(1.1)
+            transition: all .7s ease
+    &__name
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -20%)
+        font-size: 2.4rem
+        line-height: 2.9rem
+        letter-spacing: 0.2rem
+        color: white
+        text-transform: uppercase
+        text-align: center
+        opacity: 0
+        transition: all .7s ease
+    &__text-content
+        max-width: 68.6rem
+    &__heading
+        margin-bottom: 1rem
+    &:hover &__name
+        opacity: 1
+        transform: translate(-50%,-50%)
+    &:hover img
+        transform: scale(1)
+        filter: blur(.3rem) brightness(70%)
