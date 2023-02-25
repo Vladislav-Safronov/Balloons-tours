@@ -1,11 +1,24 @@
 .photos
     position: relative
+    max-width: 100%
+    @media (max-width: 1310px)
+        height: 41rem
+        display: flex
+        width: 54rem
+        margin: 0 auto
+    @media (max-width: 612px)
+        height: 30rem
     &__photo
         max-width: 31.8rem
         max-height: 20rem
         border-radius: .5rem
         position: absolute
         transition: all .5s
+        @media (max-width: 612px)
+            max-width: 27rem
+        @media (max-width: 400px)
+            max-width: 26rem
+
         &:hover
             transform: scale(1.1) rotate3d(1, 1, 1, 5deg)
             z-index: 20
@@ -15,11 +28,17 @@
         &_n2
             top: 9rem
             left: 22.3rem
+            @media (max-width: 612px)
+                top: 6rem
+                left: 17.3rem
             &:hover
                 transform: scale(1.1) rotate3d(1, 1, 1, -5deg)
         &_n3
             top: 16.5rem
             left: 2rem
+            @media (max-width: 612px)
+                top: 10.5rem
+                left: 2rem
     &:hover &__photo:not(:hover)
         transform: scale(0.95)
         

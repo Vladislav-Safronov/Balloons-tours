@@ -5,6 +5,16 @@
     padding: 5rem 20rem 5rem 17rem
     clip-path: polygon(11% 0, 100% 0%, 89% 100%, 0% 100%)
     @include clearfix()
+    @media (max-width: 1144px)
+        text-align: center
+    @media (max-width: 880px)
+        clip-path: polygon(6% 0, 100% 0%, 94% 100%, 0% 100%)
+    @media (max-width: 758px)
+        padding: 5rem 12rem 5rem 10rem
+    @media (max-width: 612px)
+        padding: 5rem 7rem 5rem 4rem
+    @media (max-width: 492px)
+        clip-path: none
     &__img
         position: relative
         width: 16.7rem
@@ -15,6 +25,10 @@
         float: left
         margin-right: 4rem
         overflow: hidden
+        @media (max-width: 1144px)
+            float: none
+            margin: 0 auto
+            margin-bottom: 2rem
         & img
             transform: scale(1.1)
             transition: all .7s ease
