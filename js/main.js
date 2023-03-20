@@ -1,3 +1,11 @@
+const allLinks = document.querySelectorAll('[href^="#"]');
+
+for (let link of allLinks) {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+    })
+}
+
 // Скролл - Наш каталог
 const ourCatalog = document.querySelector('[data-ourCatalog]');
 
